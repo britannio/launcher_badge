@@ -3,7 +3,7 @@ import UIKit
 
 public class SwiftLauncherBadgePlugin: NSObject, FlutterPlugin {
     public static func register(with registrar: FlutterPluginRegistrar) {
-        let channel = FlutterMethodChannel(name: "launcher_badge", binaryMessenger: registrar.messenger())
+        let channel = FlutterMethodChannel(name: "dev.britannio.launcher_badge", binaryMessenger: registrar.messenger())
         let instance = SwiftLauncherBadgePlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
     }

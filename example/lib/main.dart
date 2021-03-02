@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:launcher_badge/launcher_badge.dart';
 
 void main() {
@@ -14,7 +15,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
+  final _notifications = FlutterLocalNotificationsPlugin();
+  final _launcherBadge = LauncherBadge.instance;
 
   @override
   void initState() {
@@ -38,7 +40,7 @@ class _MyAppState extends State<MyApp> {
     if (!mounted) return;
 
     setState(() {
-      _platformVersion = platformVersion;
+      // _platformVersion = platformVersion;
     });
   }
 
@@ -46,11 +48,14 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+        appBar: AppBar(title: const Text('Launcher Badge Example')),
+        body: Column(
+          children: [
+            // has notification permissions
+            // request notification permissions
+            // isSupported
+            //
+          ],
         ),
       ),
     );

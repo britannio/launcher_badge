@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - launcher_badge (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - launcher_badge (from `.symlinks/plugins/launcher_badge/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  launcher_badge:
+    :path: ".symlinks/plugins/launcher_badge/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  launcher_badge: 620950ddf5f7d030c51e3aac4cd24dfff7ea2dec
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.10.1

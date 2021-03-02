@@ -27,6 +27,6 @@ class LauncherBadge {
 
   Future<bool> isSupported() async =>
       !kIsWeb &&
-      (Platform.isAndroid || Platform.isIOS) &&
+      (Platform.isIOS) &&
       await _channel.invokeMethod<bool>('isSupported');
 }
